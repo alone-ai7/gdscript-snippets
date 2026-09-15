@@ -1,6 +1,6 @@
 # 🎮 GDScript Snippets Library
 
-A collection of isolated, modular GDScript attachments and reusable mechanics. These scripts are designed to be copied directly into Godot engine projects to handle independent player logic, mathematical formulas, and node behaviors. Also make sure to read the INSTRUCTIONS.md.
+A collection of isolated, modular GDScript attachments and reusable mechanics. These scripts are designed to be copied directly into Godot engine projects to handle independent player logic, mathematical formulas, and node behaviors. Also make sure to read the INSTRUCTIONS.md, it's inside the gdscript-snippets folder.
 
 ## 📁 Library Index
 
