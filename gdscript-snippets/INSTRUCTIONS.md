@@ -33,9 +33,10 @@ func _run():
 
 ## 💡 The Core Blueprint Rules
 
-To write or test your own standalone scripts in this environment, always keep these three absolute rules in mind:
+To write or test your own standalone scripts in this environment, always keep these four absolute rules in mind:
 
 1. **`tool`**: This keyword must always sit at the absolute top (line 1). It forces the engine to let the file execute code logic straight inside the workspace editor.
 2. **`extends EditorScript`**: This tells Godot that this script is a lightweight utility piece rather than a script meant to be physically attached to a standard game node (like a `KinematicBody2D` or `Sprite`).
 3. **`func _run():`**: Godot explicitly searches for the `_run()` function to pass the execution loop the exact moment you hit the manual trigger command. Put all your initial terminal testing code here!
-4. 
+4. **🐍 The Python Rule (It's the Exact Same Logic!)**: If you already know Python, **you already know GDScript!** They both use whitespace indentation instead of curly braces `{}`, statements end automatically without semicolons `;`, and standard control loops (`if`, `for`, `while`) function identically. The logic translates directly—making it incredibly simple to read, write, and trace your scripts like normal sentences.
+5. 
