@@ -2,6 +2,8 @@
 
 A collection of isolated, modular GDScript attachments and reusable mechanics. These scripts are designed to be copied directly into Godot engine projects to handle independent player logic, mathematical formulas, and node behaviors. Also make sure to read the INSTRUCTIONS.md, it's inside the gdscript-snippets folder.
 
+>Take note that im using the 3.5.3 version, some syntaxes are updated on the version 4 of Godot
+
 ## 📁 Library Index
 
 This repository separates code templates by functional categories. Each subdirectory contains standalone, raw `.gd` text files ready for script attachment. For example:
