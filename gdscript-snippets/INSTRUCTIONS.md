@@ -39,4 +39,9 @@ To write or test your own standalone scripts in this environment, always keep th
 2. **`extends EditorScript`**: This tells Godot that this script is a lightweight utility piece rather than a script meant to be physically attached to a standard game node (like a `KinematicBody2D` or `Sprite`).
 3. **`func _run():`**: Godot explicitly searches for the `_run()` function to pass the execution loop the exact moment you hit the manual trigger command. Put all your initial terminal testing code here!
 4. **🐍 The Python Rule (It's the Exact Same Logic!)**: If you already know Python, **you already know GDScript!** They both use whitespace indentation instead of curly braces `{}`, statements end automatically without semicolons `;`, and standard control loops (`if`, `for`, `while`) function identically. The logic translates directly—making it incredibly simple to read, write, and trace your scripts like normal sentences.
-5. 
+5. Attaching to a Node (For Actual Game Snippets)**: The `EditorScript` method above is just for *testing logic in the editor*. When you're ready to use a snippet in your actual game:
+   - Remove `tool` and `extends EditorScript` — replace with whatever node type the snippet needs (e.g. `extends KinematicBody2D`, `extends Sprite`, `extends Node2D`, etc.)
+   - In the **Scene panel** (left side), click on the node you want the script on.
+   - Look at the **bottom-right Inspector** panel — you'll see a **`script`** field at the very bottom.
+   - Click the **`...`** button next to it → select your `.gd` file → **OK**.
+   - The node name in the Scene panel will now show the script name in *italics* next to it. That means it's attached. ✅   
